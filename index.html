@@ -4,27 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css">
     <title>Pet Name AI Generator</title>
 </head>
 
 <body>
-    <header>
-        <h1>AI Pet Name Generator</h1>
-    </header>
-    <main>
-        <div class="input-form">
-            <form id="">
-                <input type="text" id="pet-type" placeholder="What kind of pet?" required>
+    <div class="container">
+        <header>
+            <h1>AI Pet Name Generator</h1>
+        </header>
+        <main>
+            <div class="input-form">
+                <form id="pet-form">
+                    <input type="text" id="pet-type" placeholder="What kind of pet?" required>
+                    <label for="color-vibe">What color best represents your pet's vibe?</label>
+                    <input type="color" id="color-vibe">
+                    <div class="fur-color-checkboxes">
+                        <div class="color-sect-one">
+                            <label for="pet-color">What is your pet's actual color?</label>
+                            <input type="checkbox" id="brown">
+                            <label for="brown">Brown</label>
+                            <input type="checkbox" id="black">
+                            <label for="black">Black</label>
+                            <input type="checkbox" id="tan">
+                            <label for="tan">Tan</label>
+                            <input type="checkbox" id="white">
+                            <label for="white">White</label>
+                            <input type="checkbox" id="green">
+                            <label for="green">Green</label>
+                            <input type="checkbox" id="red">
+                            <label for="red">Red</label>
 
-            </form>
-        </div>
-    </main>
-    <footer>
-        Coded by <strong>Hayley Greenough</strong>, open-sourced on <a
-            href="https://github.com/greenough-h/AI-pet-name-generator">Github</a> and hosted on <a
-            href="https://rolypoly-petnames.netlify.app/">Netlify</a>
-    </footer>
+                        </div>
+                        <div class="color-sect-two">
+                            <input type="checkbox" id="gray">
+                            <label for="gray">Gray</label>
+                            <input type="checkbox" id="orange">
+                            <label for="orange">Orange</label>
+                            <input type="checkbox" id="brindle">
+                            <label for="brindle">Brindle</label>
+                            <input type="checkbox" id="calico">
+                            <label for="calico">Calico</label>
+                            <input type="checkbox" id="blue">
+                            <label for="blue">Blue</label>
+                            <input type="checkbox" id="yellow">
+                            <label for="yellow">Yellow</label>
+                        </div>
+                    </div>
+                    <input type="submit">
+                </form>
+            </div>
+            <div class="pet-name">
+                Robert
+
+            </div>
+        </main>
+        <footer>
+            Coded by <strong>Hayley Greenough</strong>, open-sourced on <a
+                href="https://github.com/greenough-h/AI-pet-name-generator">Github</a> and hosted on <a
+                href="https://rolypoly-petnames.netlify.app/">Netlify</a>
+        </footer>
+    </div>
     <script src="src/index.js"></script>
 </body>
 

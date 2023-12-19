@@ -45,7 +45,6 @@ h1 {
   margin: 36px auto 0px auto;
   padding: 11px 20px;
   border-radius: 25px;
-  border
 }
 
 .vibe {
@@ -68,8 +67,8 @@ h1 {
 }
 
 .instructions {
-    font-size: 12px;
-    color: gray;
+  font-size: 12px;
+  color: gray;
 }
 
 #submit {
@@ -92,12 +91,12 @@ h1 {
 }
 
 .pet-name {
-    border: 4px solid var(--accent-color);
-    max-width: 450px;
+  border: 4px solid var(--accent-color);
+  max-width: 450px;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 footer {

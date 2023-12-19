@@ -10,6 +10,14 @@ function generateName(event) {
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   axios.get(apiURL).then(displayPetName);
+
+  let nameDisplayElement = document.querySelector(".pet-name");
+  nameDisplayElement.classList.remove("hidden");
+  new Typewriter(".pet-name", {
+    strings: "Generating Name",
+    autoStart: true,
+    delay: 1,
+  });
 }
 
 function displayPetName(response) {

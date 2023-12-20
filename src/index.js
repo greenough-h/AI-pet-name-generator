@@ -6,7 +6,12 @@ function generateName(event) {
   let vibe = document.querySelector("#color-vibe");
 
   let prompt = "Please generate a pet name";
-  let context = `You love naming pets funny names that reflect their whole vibe. With a species of ${petType.value} and an aura with the color (in hex value form) of ${vibe.value} please generate a name for the pet in basic HTML. Please give only the name in your response`;
+  let context = `You love naming pets funny names that reflect their whole vibe. With a species of ${
+    petType.value
+  } and an aura with the color (in hex value form) of ${vibe.value.replace(
+    "#",
+    "%23"
+  )} please generate a name for the pet in basic HTML. Please give only the name in your response and do not give any hex values. The name should be creative based off of the color and pet species provided`;
   let apiURL = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
   axios.get(apiURL).then(displayPetName);
@@ -24,6 +29,8 @@ function displayPetName(response) {
   new Typewriter(".pet-name", {
     strings: response.data.answer,
     autoStart: true,
+    delay: 1,
+    cursor: "",
   });
 }
 

@@ -16,7 +16,7 @@ body {
 .input-form,
 .pet-name {
   background-color: white;
-  max-width: 650px;
+  max-width: 50%;
   margin: 30px auto;
   padding: 20px;
   border-radius: 10px;
@@ -111,4 +111,27 @@ footer {
 
 a {
   color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+  .input-form,
+  .pet-name {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 576px) {
+  .input-form,
+  .pet-name {
+    max-width: 90%;
+  }
+
+  h1 {
+    margin: 20px;
+  }
+
+  .form-half {
+    display: block;
+    margin: 0 auto;
+  }
 }

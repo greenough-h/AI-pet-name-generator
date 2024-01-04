@@ -113,7 +113,7 @@ a {
   color: var(--accent-color);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 925px) {
   .input-form,
   .pet-name {
     max-width: 75%;
@@ -131,6 +131,12 @@ a {
   }
 
   .form-half {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .species,
+  .vibe {
     display: block;
     margin: 0 auto;
   }
